@@ -1,0 +1,32 @@
+---
+title: "Architecture"
+description: "제품 경계와 논리 Architecture"
+---
+
+# Architecture
+
+**DataRelay Atlas가 제품 경계**입니다.
+
+Canonical **Engineering System**이 Engineering 방법론을 정의하고 GitHub 및 Repository Artifact가 normative engineering state를 보유합니다. Atlas는 이 상태를 읽고 정규화하며 검색 가능한 지식으로 projection하고 사람과 AI에게 scoped context를 제공합니다.
+
+```text
+GitHub / OpenSpec / Code / Tests / ADR / CI
+                  Canonical
+                      |
+                      v
+                DataRelay Atlas
+      Methodology / Project / Lifecycle
+        Knowledge / Retrieval / MCP
+                      |
+            +---------+---------+
+            |                   |
+            v                   v
+         Human UI           AI Clients
+                         Cursor / ChatGPT
+```
+
+## Knowledge Engine
+
+Athena는 재사용 가능한 Knowledge Engine 후보/Integration이며 제품 자체가 아닙니다. Atlas는 Wiki.js, PostgreSQL/pgvector, Indexing, Semantic Retrieval, MCP, Dashboard, Backup 패턴을 재사용할 수 있지만 Project/Methodology/Provenance와 같은 Atlas 고유 계약은 Atlas 제품 경계에서 관리합니다.
+
+이 경계를 통해 Knowledge 구현을 교체하거나 발전시켜도 DataRelay Atlas의 제품 계약은 유지할 수 있습니다.

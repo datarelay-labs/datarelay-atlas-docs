@@ -1,0 +1,32 @@
+---
+title: "Architecture"
+description: "Product boundary and logical architecture"
+---
+
+# Architecture
+
+DataRelay Atlas is the product boundary.
+
+The canonical **Engineering System** defines engineering methodology. GitHub and repository artifacts carry normative engineering state. Atlas reads and normalizes that state, projects searchable knowledge, and exposes scoped context to humans and AI clients.
+
+```text
+GitHub / OpenSpec / Code / Tests / ADR / CI
+                  Canonical
+                      |
+                      v
+                DataRelay Atlas
+      Methodology / Project / Lifecycle
+        Knowledge / Retrieval / MCP
+                      |
+            +---------+---------+
+            |                   |
+            v                   v
+         Human UI           AI Clients
+                         Cursor / ChatGPT
+```
+
+## Knowledge engine
+
+Athena is a candidate/reusable knowledge-engine integration, not the product identity. Atlas may reuse Wiki.js, PostgreSQL/pgvector, indexing, semantic retrieval, MCP, dashboard, and backup patterns while keeping Atlas-specific project/methodology/provenance contracts in the Atlas product.
+
+This boundary allows the knowledge implementation to evolve without changing the DataRelay Atlas product contract.
