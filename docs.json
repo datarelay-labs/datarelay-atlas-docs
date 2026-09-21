@@ -1,0 +1,73 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "DataRelay Atlas",
+  "description": "Engineering Knowledge & Lifecycle Platform for connecting methodology, project state, knowledge, and AI context.",
+  "colors": {
+    "primary": "#2563EB"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Product Repository",
+        "href": "https://github.com/datarelay-labs/datarelay-atlas"
+      },
+      {
+        "label": "Engineering System",
+        "href": "https://github.com/datarelay-labs/engineering-system"
+      }
+    ]
+  },
+  "search": {
+    "prompt": "Search DataRelay Atlas docs..."
+  },
+  "appearance": {
+    "default": "system",
+    "strict": false
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Start Here",
+            "pages": [
+              "index",
+              "architecture"
+            ]
+          },
+          {
+            "group": "Concepts",
+            "pages": [
+              "concepts/source-of-truth",
+              "concepts/engineering-system"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "ko",
+        "groups": [
+          {
+            "group": "시작하기",
+            "pages": [
+              "ko/index",
+              "ko/architecture"
+            ]
+          },
+          {
+            "group": "핵심 개념",
+            "pages": [
+              "ko/concepts/source-of-truth",
+              "ko/concepts/engineering-system"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

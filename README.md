@@ -8,17 +8,15 @@ Human-readable product documentation for **DataRelay Atlas**, the Engineering Kn
 
 This repository is the public documentation layer. Product behavior, architecture decisions, engineering metadata, implementation, tests, and release evidence remain canonical in the DataRelay Atlas product repository and its linked engineering artifacts.
 
-The documentation site is intended to use Mintlify with English and Korean navigation.
+The site is configured for Mintlify with English and Korean navigation. A public documentation domain has not been fixed yet; do not treat a provisional hostname as canonical.
 
-## Initial documentation areas
+## Documentation map
 
-- Product overview and concepts
-- Architecture and source-of-truth model
-- Project onboarding and registry
-- Engineering System integration
-- Knowledge ingestion and provenance
-- AI/MCP integration
-- Operations and administration
-- Security and licensing
+- `index.mdx` / `ko/index.mdx` — product overview
+- `architecture.mdx` / `ko/architecture.mdx` — platform boundary and major layers
+- `concepts/source-of-truth.mdx` / Korean equivalent — canonical vs derived knowledge model
+- `concepts/engineering-system.mdx` / Korean equivalent — relationship to the canonical Engineering System
 
-Until the public site domain is finalized, repository links are the stable entrypoints.
+## Authority
+
+This repository is derived human-facing documentation. If it conflicts with canonical product/specification/code/test/ADR/release state in `datarelay-labs/datarelay-atlas`, the canonical product repository wins.

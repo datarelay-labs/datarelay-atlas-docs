@@ -1,0 +1,19 @@
+---
+title: "Source of Truth"
+description: "Canonical and derived engineering knowledge"
+---
+
+# Source of Truth
+
+Atlas follows the Engineering System authority model.
+
+1. Executable code/config/schema represents runtime truth.
+2. Accepted product/specification artifacts represent intended behavior.
+3. Repository engineering metadata represents lifecycle contracts.
+4. ADRs represent durable architectural decisions.
+5. Runbooks and RCAs represent operational procedure and incident learning.
+6. Atlas knowledge is derived for navigation, search, synthesis, and AI retrieval.
+
+Derived Atlas content must preserve source provenance where applicable and must not silently override canonical repository state.
+
+If derived and canonical content disagree, **canonical Git/GitHub content wins**.
